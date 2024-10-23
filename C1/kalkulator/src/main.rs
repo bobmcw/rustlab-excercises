@@ -13,11 +13,11 @@ fn main() {
 
     }
 }
-fn take_num(msg: String) -> i32{
+fn take_num(msg: String) -> f32{
     let mut input = String::new();
     println!("{}",&msg);
     io::stdin().read_line(&mut input).expect("podano nieprawidłową daną");
-    let x: i32 = input.trim().parse().expect("not a number");
+    let x: f32 = input.trim().parse().expect("not a number");
     x
 }
 fn take_sign() -> char{
@@ -27,17 +27,17 @@ fn take_sign() -> char{
     let x: char = input.trim().parse().expect("not a char");
     x
 }
-fn dodawanie(x:i32,y:i32)-> i32{
+fn dodawanie(x:f32,y:f32)-> f32{
     x+y
 }
-fn odejmowanie(x:i32,y:i32)-> i32{
+fn odejmowanie(x:f32,y:f32)-> f32{
     x-y
 }
-fn mnozenie(x:i32,y:i32)-> i32{
+fn mnozenie(x:f32,y:f32)-> f32{
     x*y
 }
-fn dzielenie(x:i32,y:i32)-> i32{
-    if y == 0{
+fn dzielenie(x:f32,y:f32)-> f32{
+    if y == 0.0{
         panic!("nie mozna dzielic przez zero");
     }
     else {
