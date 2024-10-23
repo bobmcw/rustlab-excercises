@@ -23,13 +23,3 @@ fn main() {
     log(warn);
 
 }
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-
-//     #[test]
-//     fn log_an_error() {
-//         let msg = LogMsg{level: LogLevel::Error,msg: "Segmentation Fault"};
-//         assert_eq!(result, 4);
-//     }
-// }
